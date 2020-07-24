@@ -59,6 +59,11 @@ export const Filters = styled.section`
             color: #FFF;
             margin: 8px;
             cursor: pointer;
+            transition: background 200ms ease-in-out;
+
+            &:hover {
+                background: #4F4F4F;
+            }
         }
     }
 `
