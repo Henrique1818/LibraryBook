@@ -22,7 +22,7 @@ export const Wrapper = styled.section`
 
         font-size: 42px;
         line-height: 52px;
-        color: #6C63FF;
+        color: #4F4F4F;
     }
 `
 
@@ -34,7 +34,7 @@ export const Filters = styled.section`
         text-align: center;
         margin-bottom: 24px;
 
-        color: #6C63FF;
+        color: #4F4F4F;
 
         font-size: 42px;
         line-height: 46px;
@@ -58,6 +58,7 @@ export const Filters = styled.section`
             background: #6C63FF;
             color: #FFF;
             margin: 8px;
+            cursor: pointer;
         }
     }
 `
