@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     margin: 8vh auto;
+    max-width: 1400px;
 `
 
 export const Wrapper = styled.section`
@@ -21,7 +22,7 @@ export const Wrapper = styled.section`
 
         font-size: 42px;
         line-height: 52px;
-        color: #FFF;
+        color: #6C63FF;
     }
 `
 
@@ -33,7 +34,7 @@ export const Filters = styled.section`
         text-align: center;
         margin-bottom: 24px;
 
-        color: #FFF;
+        color: #6C63FF;
 
         font-size: 42px;
         line-height: 46px;

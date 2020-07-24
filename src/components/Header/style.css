@@ -12,10 +12,12 @@ a {
     padding: 32px;
     margin: 0 auto;
     box-sizing: border-box;
+
+    max-width: 1400px;
 }
 
 .container .logo {
-    color: #FFF;
+    color: #6C63FF;
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -28,7 +30,7 @@ a {
 
 .container nav a {
     font-size: 20px;
-    color: #FFF;
+    color: #4F4F4F;
     font-weight: normal;
     margin-right: 16px;
 }
