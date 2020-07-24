@@ -1,0 +1,44 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 90%;
+
+    padding: 32px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container .logo {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container nav {
+    display: flex;
+    align-items: center;
+}
+
+.container nav a {
+    font-size: 20px;
+    color: #FFF;
+    font-weight: normal;
+    margin-right: 16px;
+}
+
+.container nav button {
+    margin-left: 16px;
+    background-color: #6C63FF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #FFF;
+
+    font-size: 18px;
+}
