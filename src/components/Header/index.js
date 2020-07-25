@@ -11,7 +11,7 @@ function Header() {
                 <a href="#">Livros</a>
                 <a href="#">Comunidade</a>
 
-                <button type="button">Novo Livro</button>
+                <button type="button">Adicionar Livro</button>
             </nav>
         </div>
     );

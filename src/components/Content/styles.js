@@ -67,3 +67,74 @@ export const Filters = styled.section`
         }
     }
 `
+
+export const BookCard = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-space-around;
+    align-items: center;
+
+    .cards {
+        width: 400px;
+        height: 200px;
+        background: #4F4F4F;
+        border-radius: 8px;
+        margin: 12px auto;
+    }
+`
+
+export const Community = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 12vh;
+
+    .emailBook {
+        width: 50%;
+        height: 80vh;
+    }
+
+    .email-content {
+        max-width: 400px;
+
+        h2 {
+            margin-bottom: 24px;
+
+            color: #4F4F4F;
+
+            font-size: 42px;
+            line-height: 46px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .email-info {
+            input {
+                width: 290px;
+                padding: 12px 24px;
+
+                background: #FFF;
+                border: 2px solid #4F4F4F;
+                border-radius: 5px;
+
+                font-size: 18px;
+                color: #4F4F4F;
+
+                margin-right: 10px;
+            }
+
+            button {
+                padding: 14px 24px;
+                background: #6C63FF;
+                border-radius: 5px;
+                color: #FFF;
+
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+
+`

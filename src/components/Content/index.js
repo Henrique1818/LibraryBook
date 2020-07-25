@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './styles';
 
 import BookLove from '../../assets/book_love.svg';
+import EmailBook from '../../assets/email.svg';
 
 function Wrapper() {
     return (
@@ -29,6 +30,29 @@ function Wrapper() {
                     <button type="button">Receitas</button>
                 </div>
             </S.Filters>
+
+            <S.BookCard>
+                <div className="cards"></div>
+                <div className="cards"></div>
+                <div className="cards"></div>
+
+                <div className="cards"></div>
+                <div className="cards"></div>
+                <div className="cards"></div>
+            </S.BookCard>
+
+            <S.Community>
+                <div className="email-content">
+                    <h2>Receba novidades no seu e-mail</h2>
+
+                    <div className="email-info">
+                        <input type="email" placeholder="Digite seu e-mail"/>
+                        <button type="button">Enviar</button>
+                    </div>
+                </div>
+
+                <img className="emailBook" src={EmailBook} alt="Ilustração de um email"/>
+            </S.Community>
         </S.Container>
     );
 }
