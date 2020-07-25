@@ -32,7 +32,9 @@ function Wrapper() {
             </S.Filters>
 
             <S.BookCard>
-                <div className="cards"></div>
+                <div className="cards">
+                    
+                </div>
                 <div className="cards"></div>
                 <div className="cards"></div>
 

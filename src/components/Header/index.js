@@ -1,9 +1,9 @@
 import React from 'react';
-import Style from './style.css';
+import * as S from './styles';
 
 function Header() {
     return (
-        <div className="container">
+        <S.Container>
             <a href="#" className="logo">Library</a>
 
             <nav>
@@ -13,7 +13,7 @@ function Header() {
 
                 <button type="button">Adicionar Livro</button>
             </nav>
-        </div>
+        </S.Container>
     );
 }
 

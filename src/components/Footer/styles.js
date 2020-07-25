@@ -21,6 +21,7 @@ export const Container = styled.div`
             a {
                 color: #FFF;
                 transition: color 200ms ease-in;
+                text-decoration: none;
 
                 &:hover {
                     color: #4F4F4F;

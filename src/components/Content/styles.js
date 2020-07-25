@@ -133,6 +133,12 @@ export const Community = styled.section`
 
                 font-size: 18px;
                 cursor: pointer;
+                transition: background 200ms ease-in-out;
+
+                &:hover {
+                    background: #4F4F4F;
+                    color: #FFF;
+                }
             }
         }
     }
