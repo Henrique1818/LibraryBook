@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 90%;
 
-    padding: 32px;
+    padding: 18px 0;
     margin: 0 auto;
     box-sizing: border-box;
 
-    max-width: 1400px;
+    max-width: 1200px;
 
     a {
         text-decoration: none;
@@ -25,12 +24,12 @@ export const Container = styled.div`
         letter-spacing: 2px;
     }
 
-    nav {
+    nav ul {
         display: flex;
         align-items: center;
     }
 
-    nav a {
+    nav ul a {
         font-size: 20px;
         color: #4F4F4F;
         font-weight: normal;
@@ -58,9 +57,9 @@ export const Container = styled.div`
         }
     }
 
-    nav button {
+    nav ul button {
         margin-left: 16px;
-        background-color: #6C63FF;
+        background: #6C63FF;
         padding: 12px 24px;
         border-radius: 8px;
         color: #FFF;
@@ -71,6 +70,105 @@ export const Container = styled.div`
         &:hover {
             background: #4F4F4F;
             color: #FFF;
+        }
+    }
+
+    @media (max-width: 672px) {
+        nav {
+            display: none;
+        }
+
+        .one,
+        .two,
+        .three {
+            width: 25px;
+            height: 2px;
+            background: #6C63FF;
+            margin: 5px auto;
+            cursor: pointer;
+
+            transition-duration: 0.3s;
+        }
+
+        .menu .three:last-child {
+            margin-bottom: 0;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 80%;
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+        /* fullscreen */
+        .menu.on {
+            position: absolute;
+            top:0;
+            left:0;
+            
+            width: 100vw;
+            height: 100vh;
+
+            background-color: #4F4F4F;
+            
+            z-index: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu.on nav {
+            display: block;
+            height: 50%;
+        }
+
+        .menu.on .menu-toggle {
+            position: absolute;
+            right: 18px;
+            top: 20px;
+        }
+
+        .menu.on .menu-toggle .one {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .menu.on .menu-toggle .two {
+            opacity: 0;
+        }
+
+        .menu.on .menu-toggle .three {
+            transform: rotate(-45deg) translate(2px,-4px);
+        }
+
+        .menu.on nav ul {
+            text-align: center;
+            display: block;
+        }
+
+        .menu.on nav ul a{
+            transition-duration: 0.5s;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            display: block;
+            color: #FFF;
+            margin: 18px 0;
+        }
+
+        .menu.on nav ul button {
+            margin-top: 12px;
+
+            &:hover {
+                background: #FFF;
+                color: #6C63FF;
+                transition: background 200ms ease;
+            }
         }
     }
 `

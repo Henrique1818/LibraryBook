@@ -1,17 +1,15 @@
 import React from 'react';
-import Style from './global.css';
+import GlobalStyle from '../../global';
 
 import Header from '../../components/Header';
-import Content from '../../components/Content';
-import Footer from '../../components/Footer';
+
 
 function Home() {
     return (
-        <div>
+        <>
             <Header />
-            <Content />
-            <Footer />
-        </div>
+            <GlobalStyle />
+        </>
     );
 }
 
