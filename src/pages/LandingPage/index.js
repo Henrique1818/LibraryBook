@@ -6,22 +6,25 @@ import * as S from './styled';
 function LandingPage() {
     return (
         <S.Container>
-            <div>
-                <h2 className="title">
-                    Library
-                </h2>
+            <header className="header">
+                <div>
+                    <h2 className="title">
+                        Library
+                    </h2>
 
-                <p className="subtitle">
-                    Encontre seus livros favoritos e os demais variados temas.
-                </p>
-            </div>
+                    <p className="subtitle">
+                        Encontre seus livros favoritos e os demais variados temas.
+                    </p>
+                </div>
+                
+                <img className="image-landing-page" src={BookLove} alt="amor por livros"/>
+            </header>
 
-            <img className="image-landing-page" src={BookLove} alt="amor por livros"/>
 
-            <div className="buttons">
+            <nav className="buttons">
                 <button className="add-button btn-config" type="button">Adicionar livro</button>
                 <button className="recente-button btn-config" type="button">Livro recentes</button>
-            </div>
+            </nav>
         </S.Container>
     );
 }

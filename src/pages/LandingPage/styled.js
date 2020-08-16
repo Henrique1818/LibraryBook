@@ -2,43 +2,50 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
     width: 100%;
-    max-width: 700px;
-
+    min-width: 300px;
+    
     display: grid;
     align-items: center;
     justify-content: center;
-    margin: 5.2rem auto;
+    margin: 5rem 0;
+    overflow: hidden;
 
-    div {
+    header {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        margin-bottom: 3rem;
+        align-items: center;
 
-        .title {
-            color: var(--color-text-purple);
-            font-size: 6.8rem;
-            line-height: 7.8rem;
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
-        }
-
-        .subtitle {
-            color: var(--color-text-gray);
-            font-size: 2rem;
-            line-height: 3rem;
+        div {
             text-align: center;
-            max-width: 280px;
+            .title {
+                color: var(--color-text-purple);
+                font-size: 6.8rem;
+                line-height: 7.8rem;
+                letter-spacing: 2px;
+                margin: 0 auto 2rem;
+            }
+
+            .subtitle {
+                color: var(--color-text-gray);
+                font-size: 2rem;
+                line-height: 3rem;
+                text-align: center;
+                max-width: 280px;
+            }
         }
     }
 
     .image-landing-page {
-        width: 90%;
+        width: 80%;
         margin: 3.2rem auto;
     }
 
     .buttons {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
         margin: 4rem auto 1rem;
 
         .btn-config {
@@ -84,5 +91,46 @@ export const Container = styled.header`
                 transform: translateY(0);
             }
         }
+    }
+
+    @media(min-width: 700px) {
+        header {
+            margin-top: 2rem;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            div {
+                text-align: left;
+
+                .title {
+                    font-size: 8rem;
+                }
+
+                .subtitle {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+
+            .image-landing-page {
+                width: 45%;
+                margin: 0;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
     }
 `

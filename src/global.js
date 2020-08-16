@@ -28,6 +28,18 @@ export const GlobalStyled = createGlobalStyle`
 
     body {
         background: var(--color-background-dark);
+
+        ::-webkit-scrollbar-track {
+            background-color: var(--color-background-dark);
+        }
+        ::-webkit-scrollbar {
+            width: 0.8rem;
+            background: none;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-text-purple);
+            border-radius: 3rem;
+        }
     }
 
     body,
