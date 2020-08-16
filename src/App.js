@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingPage from './pages/LandingPage';
+import Routes from './routes';
 
 import {GlobalStyled} from './global';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <GlobalStyled />
-      <LandingPage />
+      <Routes />
     </>
   );
 }

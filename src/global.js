@@ -46,11 +46,22 @@ export const GlobalStyled = createGlobalStyle`
     input,
     button,
     textarea {
-        font: 14px 'Roboto', sans-serif;
+        font: 1.6rem 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
     }
 
-    @media (min-width: 700px) {
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        max-width: 900px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+    }
+
+    @media (max-width: 700px) {
         :root {
             font-size: 62.5%;
         }

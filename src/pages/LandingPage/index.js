@@ -2,6 +2,7 @@ import React from 'react';
 import BookLove from '../../assets/book_lover.svg';
 
 import * as S from './styled';
+import { Link } from 'react-router-dom';
 
 function LandingPage() {
     return (
@@ -22,11 +23,15 @@ function LandingPage() {
 
 
             <nav className="buttons">
-                <button className="add-button btn-config" type="button">Adicionar livro</button>
-                <button className="recente-button btn-config" type="button">Livros recentes</button>
+                <Link to="/createBook" className="add-button btn-config" type="button">
+                    Adicionar livro
+                </Link>
+                <Link to="/listBook" className="recente-button btn-config" type="button">
+                    Livros recentes
+                </Link>
             </nav>
         </S.Container>
     );
-}
+};
 
 export default LandingPage;

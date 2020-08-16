@@ -18,6 +18,7 @@ export const Container = styled.header`
 
         div {
             text-align: center;
+            
             .title {
                 color: var(--color-text-purple);
                 font-size: 6.8rem;
