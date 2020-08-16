@@ -23,7 +23,7 @@ function LandingPage() {
 
             <nav className="buttons">
                 <button className="add-button btn-config" type="button">Adicionar livro</button>
-                <button className="recente-button btn-config" type="button">Livro recentes</button>
+                <button className="recente-button btn-config" type="button">Livros recentes</button>
             </nav>
         </S.Container>
     );
