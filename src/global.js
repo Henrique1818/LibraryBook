@@ -54,13 +54,6 @@ export const GlobalStyled = createGlobalStyle`
         text-decoration: none;
     }
 
-    .container {
-        max-width: 900px;
-        width: 90%;
-        margin: 0 auto;
-        padding: 3rem 1rem;
-    }
-
     @media (max-width: 700px) {
         :root {
             font-size: 62.5%;

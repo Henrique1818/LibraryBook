@@ -1,30 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import CardBook from '../../components/CardBook';
+import CardBook from '../../components/CardBook/CardBook';
+import Header from '../../components/Header/Header';
 
 import * as S from './styled';
 
 function ListBook() {
     return (
         <S.Container>
-            <S.Header>
-                <div className="header">
-                    <Link to="/">
-                        <span className="material-icons arrow_back">
-                            arrow_back
-                        </span>
-                    </Link>
+            <Header />
 
-                    <Link to="/">
-                        <h2>Library</h2>
-                    </Link>
-                </div>
-            </S.Header>
-
-            <S.ShowBook className="container">
-                <h2>Livros</h2>
-                <CardBook />
+            <S.ShowBook>
+               <div className="main">
+                    <h2>Livros</h2>
+                    <CardBook />
+               </div>
             </S.ShowBook>
             
         </S.Container>
