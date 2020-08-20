@@ -36,6 +36,41 @@ export const ShowBook = styled.main`
                 bottom: -0.4rem;
             }
         }
+
+        .filter {
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+
+            input {
+                padding: 2rem 3rem;
+                border-radius: 0.8rem;
+                margin-right: 2rem;
+                margin-bottom: 2rem;
+                color: var(--color-text-purple);
+            }
+
+            .btn-buscar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                font-size: 2rem;
+                padding: 2rem 3rem;
+                border-radius: 0.8rem;
+                background: var(--color-text-purple);
+                color: var(--color-text-light);
+                transition: background color 200ms ease-in-out;
+
+                &:hover {
+                    background: var(--color-background-dark);
+                    color: var(--color-text-purple);
+                    border: 1px solid var(--color-text-purple);
+                }
+            }
+        }
     }
 
     @media (min-width: 700px) {
@@ -44,21 +79,42 @@ export const ShowBook = styled.main`
             width: 90%;
             margin: 0 auto;
 
-            h2 {
-                display: inline-block;
-                color: var(--color-text-light);
-                font-size: 4.6rem;
-                line-height: 5.6rem;
+                h2 {
+                    display: inline-block;
+                    color: var(--color-text-light);
+                    font-size: 4.6rem;
+                    line-height: 5.6rem;
 
-                &::after {
-                content: '';
-                width: 180px;
-                height: 2px;
-                background: var(--color-text-purple);
-                position: absolute;
-                left: 0;
-                bottom: -0.4rem;
+                    &::after {
+                    content: '';
+                    width: 180px;
+                    height: 2px;
+                    background: var(--color-text-purple);
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.4rem;
+                }
             }
+
+            .filter {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .btn-buscar {
+                    width: 15rem;
+                    font-size: 1.8rem;
+                    padding: 1.8rem 3rem;
+                }
+
+                input {
+                    width: 40rem;
+                    padding: 2rem 3rem;
+                    border-radius: 0.8rem;
+                    margin-right: 2rem;
+                    margin-bottom: 0;
+                    color: var(--color-text-purple);
+                }
             }
         }
     }
