@@ -50,6 +50,10 @@ export const ShowBook = styled.main`
                 margin-right: 2rem;
                 margin-bottom: 2rem;
                 color: var(--color-text-purple);
+
+                &:focus {
+                    box-shadow: 4px 4px 12px -2px rgba(108, 99, 255, 0.8);
+                }
             }
 
             .btn-buscar {

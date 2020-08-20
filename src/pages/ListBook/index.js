@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import CardBook from '../../components/CardBook/CardBook';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
 
 import * as S from './styled';
-import { Link } from 'react-router-dom';
 
 function ListBook() {
     return (
@@ -21,6 +22,7 @@ function ListBook() {
                     </div>
 
                     <CardBook />
+                    <Footer />
                </div>
             </S.ShowBook>
             
