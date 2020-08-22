@@ -1,23 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
-    width: 100%;
-    margin: 2rem auto;
-
-    div {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 1rem auto;
+export const Container = styled.div`
+    .cards {
+        display: grid;
         align-items: center;
         justify-content: center;
-    }
 
-    .cards {
         width: 28rem;
         height: 38rem;
-        padding: 1rem;
+        margin: 4rem;
         border: 1px solid var(--color-button-red);
         background: var(--color-background-dark);
         border-radius: 0.8rem;
@@ -26,8 +17,10 @@ export const Container = styled.section`
 
         .container {
             img {
+                width: 20rem;
+                height: 20rem;
                 background-position: top center;
-                border-radius: 0.4rem;
+                border-radius: 0.8rem;
             }
 
             .content {
@@ -82,6 +75,10 @@ export const Container = styled.section`
     }
 
     @media (min-width: 700px) {
-        
+        .section {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto;
+        }
     }
 `

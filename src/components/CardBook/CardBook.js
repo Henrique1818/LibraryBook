@@ -1,93 +1,23 @@
 import React from 'react';
-
-import Harry from '../../assets/images.jpeg';
-
-import * as S from './styled';
 import { Link } from 'react-router-dom';
 
-function CardBook() {
+import * as S from './styled';
+
+function CardBook({avatar_url, title, id}) {
     return (
         <S.Container>
-            <div>
-                <div className="cards">
+            <div className="cards">
                     <div className="container">
-                        <img src={Harry} alt="Harry e a pedra filosofal"/>
+                        <img src={avatar_url} alt={title}/>
 
                         <div className="content show">
-                            <h1>Harry Potter e a pedra filosofal</h1>
-                            <Link to="/" className="btn-ver-mais">
+                            <h1>{title}</h1>
+                            <Link to={`/libary/${id}`} className="btn-ver-mais">
                                 Ver mais
                             </Link>
                         </div>
                     </div>
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <img src={Harry} alt="Harry e a pedra filosofal"/>
-
-                        <div className="content show">
-                            <h1>Harry Potter e a pedra filosofal</h1>
-                            <Link to="/" className="btn-ver-mais">
-                                Ver mais
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <img src={Harry} alt="Harry e a pedra filosofal"/>
-
-                        <div className="content show">
-                            <h1>Harry Potter e a pedra filosofal</h1>
-                            <Link to="/" className="btn-ver-mais">
-                                Ver mais
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="cards">
-                    <div className="container">
-                        <img src={Harry} alt="Harry e a pedra filosofal"/>
-
-                        <div className="content show">
-                            <h1>Harry Potter e a pedra filosofal</h1>
-                            <Link to="/" className="btn-ver-mais">
-                                Ver mais
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <img src={Harry} alt="Harry e a pedra filosofal"/>
-
-                        <div className="content show">
-                            <h1>Harry Potter e a pedra filosofal</h1>
-                            <Link to="/" className="btn-ver-mais">
-                                Ver mais
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <img src={Harry} alt="Harry e a pedra filosofal"/>
-
-                        <div className="content show">
-                            <h1>Harry Potter e a pedra filosofal</h1>
-                            <Link to="/" className="btn-ver-mais">
-                                Ver mais
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             </div>
         </S.Container>
     );
 };

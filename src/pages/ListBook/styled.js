@@ -77,6 +77,14 @@ export const ShowBook = styled.main`
         }
     }
 
+    .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
     @media (min-width: 700px) {
         .main {
             max-width: 900px;
@@ -120,6 +128,14 @@ export const ShowBook = styled.main`
                     color: var(--color-text-purple);
                 }
             }
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto;
         }
     }
 `
