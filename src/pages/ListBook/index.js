@@ -10,6 +10,7 @@ import * as S from './styled';
 
 function ListBook() {
     const [books, setBooks] = useState([]);
+    const [typeCategory, setTypeCategory] = useState('fantasia');
 
     async function loadBook() {
         await api.get(`/library`)
@@ -32,8 +33,8 @@ function ListBook() {
                     <h2>Livros</h2>
 
                     <div className="filter">
-                        <input type="text" value="" placeholder="Filtrar por categoria" />
-                        <Link to="/" className="btn-buscar">Buscar</Link>
+                        <input type="text" onChange={ e => { setTypeCategory( e.target.value)}} placeholder="Filtrar por categoria" />
+                        <Link to={`/book?category=${typeCategory}`} className="btn-buscar">Buscar</Link>
                     </div>
 
                     <div className="content">
