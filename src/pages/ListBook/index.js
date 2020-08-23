@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 
 import api from '../../services/api';
 
@@ -8,9 +8,10 @@ import Header from '../../components/Header/Header';
 
 import * as S from './styled';
 
-function ListBook() {
+function ListBook(props) {
+    
     const [books, setBooks] = useState([]);
-    const [typeCategory, setTypeCategory] = useState('fantasia');
+    const [typeCategory, setTypeCategory] = useState('');
 
     async function loadBook() {
         await api.get(`/library`)
@@ -37,7 +38,7 @@ function ListBook() {
                         <Link to={`/book?category=${typeCategory}`} className="btn-buscar">Buscar</Link>
                     </div>
 
-                    <div className="content">
+                    <div key={books.id} className="content">
                         {
                             books.map(book => (
                                 <CardBook avatar_url={book.avatar_url} title={book.title} id={book._id} />
