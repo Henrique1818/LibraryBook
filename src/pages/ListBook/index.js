@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Link,  } from 'react-router-dom';
 
 import api from '../../services/api';
 
+import Header from '../../components/Header';
+import Filter from '../../components/Filter';
 import CardBook from '../../components/CardBook/CardBook';
-import Header from '../../components/Header/Header';
 
 import * as S from './styled';
 
-function ListBook(props) {
+function ListBook() {
     
     const [books, setBooks] = useState([]);
-    const [typeCategory, setTypeCategory] = useState('');
 
     async function loadBook() {
         await api.get(`/library`)
@@ -23,22 +22,17 @@ function ListBook(props) {
     useEffect(() => {
         loadBook();
     }, [])
-
     
     return (
         <S.Container>
             <Header />
+            <Filter />
 
             <S.ShowBook>
                <div className="main">
                     <h2>Livros</h2>
 
-                    <div className="filter">
-                        <input type="text" onChange={ e => { setTypeCategory( e.target.value)}} placeholder="Filtrar por categoria" />
-                        <Link to={`/book?category=${typeCategory}`} className="btn-buscar">Buscar</Link>
-                    </div>
-
-                    <div key={books.id} className="content">
+                    <div className="content">
                         {
                             books.map(book => (
                                 <CardBook avatar_url={book.avatar_url} title={book.title} id={book._id} />
