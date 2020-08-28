@@ -8,7 +8,7 @@ function Book({ avatar_url, title, description, authors, publishing_company, cat
         <S.Container>
             <div className="image-container">
                 <img src={avatar_url} alt={title}/>
-                <Link to="/" className="btn-editar">Editar</Link>
+                <Link to="/bookCreate" className="btn-editar">Editar</Link>
             </div>
 
             <div className="content">
