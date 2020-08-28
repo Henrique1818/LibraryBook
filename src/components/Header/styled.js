@@ -46,7 +46,7 @@ export const LibraryHeader = styled.header`
     @media (min-width: 700px) {
         .header {
             max-width: 900px;
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
 
             .arrow_back {

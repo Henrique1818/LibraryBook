@@ -48,8 +48,7 @@ export const ShowBook = styled.main`
 
     @media (min-width: 700px) {
         .main {
-            max-width: 900px;
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
 
             h2 {
@@ -57,6 +56,7 @@ export const ShowBook = styled.main`
                 color: var(--color-text-light);
                 font-size: 4.6rem;
                 line-height: 5.6rem;
+                margin-left: 12rem;
 
                 &::after {
                     content: '';

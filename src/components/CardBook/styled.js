@@ -8,7 +8,7 @@ export const Container = styled.div`
 
         width: 28rem;
         height: 38rem;
-        margin: 4rem;
+        margin: 3rem 2rem;
         border: 1px solid var(--color-button-red);
         background: var(--color-background-dark);
         border-radius: 0.8rem;

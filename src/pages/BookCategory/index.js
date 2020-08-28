@@ -11,8 +11,7 @@ import * as S from './styled';
 function Book(props) {
     const typeCategory = props.location.search
     const [books, setBooks] = useState([])
-
-    const category = new URLSearchParams(window.location.search)
+    const foundCategory = new URLSearchParams(window.location.search)
     
     useEffect(() => {
         api.get(`/library/book${typeCategory}`)
@@ -28,10 +27,10 @@ function Book(props) {
         
             <S.Container>
                 <h3 id="title">
-                    Você está procurando por: <span>{category.get('category')}</span>
+                    Você está procurando por: <span>{foundCategory.get('category')}</span>
                 </h3>
 
-                <div key={books._id} className="cards">
+                <div className="cards">
                     {
                         books.map(book => (
                             <CardBook key={book._id} avatar_url={book.avatar_url} title={book.title} id={book._id} />
