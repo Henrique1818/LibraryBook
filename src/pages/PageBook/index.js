@@ -21,18 +21,21 @@ function PageBook(props) {
     }, [])
 
     return (
-        <S.Container>
+        <>
             <Header />
             <Filter />
-            <Book 
-                avatar_url={books.avatar_url} 
-                title={books.title} 
-                description={books.description}
-                authors={books.authors}
-                publishing_company={books.publishing_company}
-                category={books.category}
-            />
-        </S.Container>
+            
+            <S.Container>
+                <Book 
+                    avatar_url={books.avatar_url} 
+                    title={books.title} 
+                    description={books.description}
+                    authors={books.authors}
+                    publishing_company={books.publishing_company}
+                    category={books.category}
+                />
+            </S.Container>
+        </>
     )
 }
 
