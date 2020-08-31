@@ -6,7 +6,7 @@ import * as S from './styled';
 function Header() {
     return (
         <S.LibraryHeader>
-            <div className="header">
+            <div className="headers">
                 <Link to="/">
                     <span className="material-icons arrow_back">
                         arrow_back
