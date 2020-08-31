@@ -27,7 +27,7 @@ export const Container = styled.section`
             border-radius: 0.8rem;
             font-size: 1.8rem;
             color: var(--color-text-light);
-            transition: background color 200ms ease-in-out;
+            transition: background 200ms ease-in 0.2ms;
 
             &:hover {
                 background: var(--color-background-dark);
@@ -68,13 +68,18 @@ export const Container = styled.section`
         }
 
         h3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
             margin: 2rem auto;
             text-align: center;
             color: var(--color-text-light);
-            font-size: 1.5rem;
+            font-size: 1.8rem;
 
             span {
                 background: var(--color-button-red);
+                margin-top: 1.2rem;
                 margin-left: 1rem;
                 padding: 1.2rem 2rem;
                 border-radius: 1rem;
@@ -118,7 +123,7 @@ export const Container = styled.section`
                 border-radius: 0.8rem;
                 font-size: 1.8rem;
                 color: var(--color-text-light);
-                transition: background color 200ms ease-in-out;
+                transition: background 200ms ease-in 0.2ms;
 
                 &:hover {
                     background: var(--color-background-dark);
@@ -159,6 +164,7 @@ export const Container = styled.section`
 
                 span {
                     background: var(--color-button-red);
+                    margin-top: 0;
                     margin-left: 1rem;
                     padding: 1.2rem 2rem;
                     border-radius: 1rem;
