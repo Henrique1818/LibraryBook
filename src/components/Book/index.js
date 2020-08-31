@@ -14,7 +14,7 @@ function Book({ avatar_url, title, description, authors, publishing_company, cat
             <div className="content">
                 <h2>{title}</h2>
                 <p className="description">{description}</p>
-                <h3>{authors} <span>{publishing_company}</span></h3>
+                <h3>Author: {authors} <span>Editora: {publishing_company}</span></h3>
                 <p className="category"> Categoria: <span>{category}</span></p>
             </div>
         </S.Container>
