@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LibraryHeader = styled.header`
-    .header {
+    .headers {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -44,7 +44,7 @@ export const LibraryHeader = styled.header`
     }
 
     @media (min-width: 700px) {
-        .header {
+        .headers {
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
