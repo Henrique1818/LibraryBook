@@ -18,14 +18,13 @@ function PageBook(props) {
         .then(response => {
             setBooks(response.data);
         })
-    }, [])
+    }, [bookID])
 
     return (
-        <>
-            <Header />
-            <Filter />
-            
+        <>  
             <S.Container>
+                <Header />
+                <Filter />
                 <Book 
                     avatar_url={books.avatar_url} 
                     title={books.title} 
@@ -33,6 +32,7 @@ function PageBook(props) {
                     authors={books.authors}
                     publishing_company={books.publishing_company}
                     category={books.category}
+                    id={books._id}
                 />
             </S.Container>
         </>
