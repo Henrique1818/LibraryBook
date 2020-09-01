@@ -12,7 +12,7 @@ function CardBook({avatar_url, title, id}) {
 
                         <div className="content show">
                             <h1>{title}</h1>
-                            <Link to={`/library/${id}`} className="btn-ver-mais">
+                            <Link to={`/library/list/books/${id}`} className="btn-ver-mais">
                                 Ver mais
                             </Link>
                         </div>
