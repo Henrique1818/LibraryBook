@@ -86,7 +86,7 @@ function CreateBook() {
                                 value={category}
                             />
                         </div>
-                        <Link to="/listBook" className="btn-save" onClick={Save}>Salvar</Link>
+                        <Link to="/library/books/list" className="btn-save" onClick={Save}>Salvar</Link>
                     </div>
                 </S.Input>
 
