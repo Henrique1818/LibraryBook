@@ -23,10 +23,10 @@ function LandingPage() {
 
 
             <nav className="buttons">
-                <Link to="/bookCreate" className="add-button btn-config" type="button">
+                <Link to="/library/books/create" className="add-button btn-config" type="button">
                     Adicionar livro
                 </Link>
-                <Link to="/listBook" className="recente-button btn-config" type="button">
+                <Link to="/library/list/books" className="recente-button btn-config" type="button">
                     Livros recentes
                 </Link>
             </nav>
