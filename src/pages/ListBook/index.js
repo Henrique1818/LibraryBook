@@ -21,13 +21,13 @@ function ListBook() {
 
     useEffect(() => {
         loadBook();
-    }, [])
+    }, [books])
     
     return (
         <>
-            <Header />
-            <Filter />
             <S.Container>
+                <Header />
+                <Filter />
                 <S.ShowBook>
                     <div className="main">
                         <h2>Livros</h2>
