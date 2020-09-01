@@ -22,10 +22,10 @@ function Book(props) {
 
     return (
         <>
-            <Header />
-            <Filter />
-        
             <S.Container>
+                <Header />
+                <Filter />
+                
                 <h3 id="title">
                     Você está procurando por: <span>{foundCategory.get('category')}</span>
                 </h3>
