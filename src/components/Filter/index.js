@@ -14,7 +14,7 @@ function Filter() {
                     onChange={ e => { setTypeCategory( e.target.value)}}
                     placeholder="Filtrar por categoria: ficcao, auto-ajuda"
                 />
-                <Link to={`/book?category=${typeCategory}`} className="btn-buscar">Buscar</Link>
+                <Link to={`/library/books?category=${typeCategory}`} className="btn-buscar">Buscar</Link>
             </div>
         </S.Container>
     );
