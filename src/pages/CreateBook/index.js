@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import Header from '../../components/Header';
 import Develop from '../../assets/develop.svg';
 
 import * as S from './styled';
-import { Link } from 'react-router-dom';
 
 function CreateBook() {
     const [avatarUrl, setAvatarUrl] = useState()
@@ -86,7 +86,7 @@ function CreateBook() {
                                 value={category}
                             />
                         </div>
-                        <Link to="/library/books/list" className="btn-save" onClick={Save}>Salvar</Link>
+                        <Link to="/library/list/books" className="btn-save" onClick={Save}>Salvar</Link>
                     </div>
                 </S.Input>
 
