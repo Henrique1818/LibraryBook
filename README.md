@@ -76,7 +76,9 @@
     <br/>
     <h1 id="demo">Demo:</h1>
     <div align="center">
-        <img width="350" src="https://j.gifs.com/mOxK4n.gif" />
+        <a href="https://j.gifs.com/mOxK4n.gif"             style="color: #D2D2D2; font-size: 40px;">
+            Ver Demo
+        </a>
     </div>
     <br />
     <br />
