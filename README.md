@@ -91,6 +91,7 @@
     <div>
         <h1 id="como-usar">Como Utilizar:</h1>
         <p id="req">
+            <h2>Requisitos</h2>
             1. Nodejs
         </p>
         <div id="inst">
@@ -142,5 +143,6 @@ O backend está disponível no respositório: <a href="https://github.com/Henriq
     Desenvolvido por <a href="https://github.com/Henrique1818" style="color: #D2D2D2; font-weight: bold;">Henrique :metal:</a>
     <br />
     <a href="https://www.linkedin.com/in/luiz-henrique1889/" style="color: #D2D2D2; font-weight: bold; margin-right: 12px;">Linkedin</a>
+        |
     <a href="https://www.instagram.com/henrique18_89/" style="color: #D2D2D2; font-weight: bold">Instagram</a> :heart:
 </div>
