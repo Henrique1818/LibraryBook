@@ -76,7 +76,7 @@
     <br/>
     <h1 id="demo">Demo:</h1>
     <div align="center">
-        <img src="https://j.gifs.com/mOxK4n.gif" />
+        <img width="350" src="https://j.gifs.com/mOxK4n.gif" />
     </div>
     <br />
     <br />
