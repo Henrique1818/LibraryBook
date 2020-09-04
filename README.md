@@ -98,3 +98,49 @@
         </div>
     </div>
 </div>
+
+1. Faça o <a href="https://github.com/Henrique1818/LibraryBook/archive/master.zip" style="color: #D2D2D2;">Download</a> ou clone o repositório LibraryBook
+
+```
+git clone git@github.com:Henrique1818/LibraryBook.git
+```
+
+2. Abra o projeto no seu editor.
+3. No seu terminal, instale os pacotes necessários:
+
+```
+yarn
+```
+
+ou
+
+```
+npm install
+```
+
+4. Ótimo! Agora você pode ir na pasta LibraryBook e iniciar o server:
+
+```
+cd LibraryBook
+```
+
+```
+yarn start
+```
+
+5. Abra seu navegador! A Library estará disponvel em http://localhost:3000/ :smiley:
+
+Backend
+
+O backend está disponível no respositório: <a href="https://github.com/Henrique1818/library-backend" style="color: #D2D2D2; font-weight: bold;">Library-backend</a>
+<br />
+<br />
+<br />
+
+
+<div align="center">
+    Desenvolvido por <a href="https://github.com/Henrique1818" style="color: #D2D2D2; font-weight: bold;">Henrique :metal:</a>
+    <br />
+    <a href="https://www.linkedin.com/in/luiz-henrique1889/" style="color: #D2D2D2; font-weight: bold; margin-right: 12px;">Linkedin</a>
+    <a href="https://www.instagram.com/henrique18_89/" style="color: #D2D2D2; font-weight: bold">Instagram</a> :heart:
+</div>
